@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Pipeline</title>
+    <title>Pipeline Automatizada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body { background-color: #f6f6f6; }
+    </style>
 </head>
 <body>
-    <h1>Exemplo de Pipeline</h1>
-<p>Este é um parágrafo alterado. </p>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100vh; width: 100%; row-gap: 2rem; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h1 style="font-size: 3rem;">Pipeline Automatizada</h1>
+        <img id="surpresa" style="display: none; width: 20rem; height: 20rem;" src="./src/img/cair_pra_b.jpg" alt="surpresa" />
+        <img id="corinthians" style="width: 20rem; height: 20rem;" src="./src/img/surpresa.png" alt="corinthians" />
+        <button id="button-surpresa" onclick="toggleDisplay('corinthians', 'surpresa', 'button-surpresa', 'button-corinthians' )" style="width: fit-content; font-size: 1.5rem; padding: 0.5rem; color: #f6f6f6; cursor: pointer; background-color: #141414; border-radius: 15px;">Clique para ter uma surpresa</button>
+        <button id="button-corinthians" onclick="toggleDisplay('surpresa', 'corinthians', 'button-corinthians', 'button-surpresa' )" style="width: fit-content; font-size: 1.5rem; padding: 0.5rem; color: #f6f6f6; cursor: pointer; background-color: #141414; border-radius: 15px; display: none;">Clique para fechar a surpresa</button>
+    </div>
+    <script src="./index.js"></script>
 </body>
-</html>
